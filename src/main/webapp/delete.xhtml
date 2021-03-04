@@ -35,7 +35,10 @@
         <div class="form-group">
             <div class="col-sm-2"></div>
             <div class="col-sm-4">
-                <center><h:commandButton value="Delete" action="#{rehberMB.delete()}" class="btn btn-primary" style="width: 80px;"></h:commandButton></center>
+                <center><label>Silmek istediğinize emin misiniz?</label></center>
+                <center><h:commandButton value="EVET" action="#{rehberMB.delete()}" class="btn btn-primary" style="width: 80px;"></h:commandButton>
+                    <input type="button" value="HAYIR" onclick="location.href = '/'" class="btn btn-primary" style="width: 80px;" />
+                </center>
             </div>
         </div>
     </h:form>

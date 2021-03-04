@@ -24,24 +24,20 @@
         </style>
     </h:head>
     <h:body>
+        <br>
+
+        </br>
         <h:form id="form" class="form-horizontal">
-            <div class="form-group">
-                <div class="col-sm-2"></div>
-                <h2 style="text-align: center" class="col-sm-4">Search</h2>
-            </div>
-            <hr/>
-            <div class="form-group">
+            <div class="form-group" style="margin-left: 60%">
                 <h:outputLabel for="isim" class="control-label col-sm-2">İsim</h:outputLabel>
                 <div class="col-sm-4">
-                    <h:inputText id="isim-id" value="#{rehberMB.isim}" class="form-control"/>
+                    <h:inputText id="isim-id" value="#{rehberMB.isim}" />
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-2"></div>
                 <div class="col-sm-4">
-                    <center><h:commandButton value="Update" action="#{rehberMB.ara()}" class="btn btn-primary" style="width: 80px;"></h:commandButton></center>
+                    <center><h:commandButton value="Search" action="#{rehberMB.ara()}" class="btn btn-primary" style="width: 80px;"></h:commandButton></center>
                 </div>
             </div>
+
         </h:form>
 
         <h:form>
@@ -72,7 +68,10 @@
                     </h:commandButton>
                 </h:column>
             </h:dataTable>
-            <center><h:commandButton action = "create.xhtml?faces-redirect=true" value="Create New User" class="btn btn-success"></h:commandButton> </center>
+            <center><h:commandButton action = "create.xhtml?faces-redirect=true" value="Create New User" class="btn btn-success"></h:commandButton>
+                <h:link outcome="index" value="View Whole Record List" class="btn btn-primary" />
+            </center>
         </h:form>
+
     </h:body>
 </html>
