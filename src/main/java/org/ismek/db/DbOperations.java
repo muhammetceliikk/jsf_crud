@@ -11,9 +11,9 @@ import java.util.List;
  */
 public class DbOperations {
 
-    static String conUrl="jdbc:mysql://localhost/UNIVERSAL?useUnicode=true&useLegacyDatetimeCode=false&serverTimezone=Turkey";
-    static String conUser="root";
-    static String conPass="13571513534";
+    static String conUrl="jdbc:mysql://localhost/UNIVERSAL";
+    static String conUser="Muhammet";
+    static String conPass="12345678";
 
     static {
         classForName();
